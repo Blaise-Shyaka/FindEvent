@@ -1,0 +1,48 @@
+nav {
+  background-color: $tomato-orange;
+  position: fixed;
+  width: 100%;
+  z-index: 2;
+
+  .nav-wrapper {
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+
+    .logo-container {
+      width: 15%;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    .navbar-links {
+      display: none;
+    }
+
+    .search-icon-wrapper {
+      width: 15%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      list-style: none;
+      margin-top: 1rem;
+
+      a {
+        text-decoration: none;
+        color: $white;
+      }
+    }
+  }
+}
+
+.event-poster-wrapper {
+  width: 10%;
+
+  img {
+    width: 100%;
+  }
+}

@@ -1,3 +1,4 @@
-body{
-    background-color: white;
-}
+@import './reset';
+@import './variables';
+@import 'navbar';
+@import 'hero';
