@@ -1,0 +1,34 @@
+.homepage-events {
+  position: relative;
+  top: 4rem;
+
+  .event {
+    width: 90%;
+    margin: 2rem auto;
+
+    .view-event {
+      border: 4px solid $tomato-orange;
+      text-decoration: none;
+      padding: 0.3rem 1.3rem;
+      font-weight: bold;
+      background-color: $tomato-orange;
+      color: $white;
+    }
+
+    .view-event:hover {
+      background-color: $white;
+      color: $blue-sky;
+    }
+  }
+
+  h3 {
+    font-size: 1.5rem;
+    margin: 1.5rem;
+    color: $tomato-orange;
+    text-decoration: underline;
+
+    i {
+      font-size: 1.2rem;
+    }
+  }
+}

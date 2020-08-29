@@ -58,20 +58,12 @@ nav .nav-wrapper .search-icon-wrapper a {
   color: #fff;
 }
 
-.event-poster-wrapper {
-  width: 10%;
-}
-
-.event-poster-wrapper img {
-  width: 100%;
-}
-
 .hero {
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0.4))), url("../images/glasses.jpg");
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4)), url("../images/glasses.jpg");
   background-size: cover;
   background-position: center center;
-  height: 55vh;
+  height: 80vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -114,5 +106,40 @@ nav .nav-wrapper .search-icon-wrapper a {
 .hero h4 {
   color: #fff;
   width: 95%;
+}
+
+.homepage-events {
+  position: relative;
+  top: 4rem;
+}
+
+.homepage-events .event {
+  width: 90%;
+  margin: 2rem auto;
+}
+
+.homepage-events .event .view-event {
+  border: 4px solid #d45749;
+  text-decoration: none;
+  padding: 0.3rem 1.3rem;
+  font-weight: bold;
+  background-color: #d45749;
+  color: #fff;
+}
+
+.homepage-events .event .view-event:hover {
+  background-color: #fff;
+  color: #007BFF;
+}
+
+.homepage-events h3 {
+  font-size: 1.5rem;
+  margin: 1.5rem;
+  color: #d45749;
+  text-decoration: underline;
+}
+
+.homepage-events h3 i {
+  font-size: 1.2rem;
 }
 /*# sourceMappingURL=main.css.map */
