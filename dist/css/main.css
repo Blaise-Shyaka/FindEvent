@@ -178,4 +178,74 @@ nav .nav-wrapper .search-icon-wrapper a {
   font-size: 2rem;
   font-weight: bold;
 }
+
+footer {
+  position: relative;
+  margin-top: 4rem;
+}
+
+footer .top-footer {
+  background-color: #000;
+  text-align: center;
+  padding: 3rem;
+  color: #fff;
+}
+
+footer .top-footer .subscribe {
+  margin-bottom: 2rem;
+}
+
+footer .top-footer .subscribe input {
+  background-color: #000;
+  color: #fff;
+  border: 1px solid #fff;
+}
+
+footer .top-footer .contact-us ul {
+  list-style: none;
+}
+
+footer .bottom-footer {
+  background-color: #1f1f1f;
+  color: #fff;
+  text-align: center;
+}
+
+footer .bottom-footer .social-media {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  width: 70%;
+  margin: 0 auto;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 1rem;
+}
+
+footer .bottom-footer .social-media li {
+  border: 3px solid #000;
+  width: 3rem;
+  height: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 50%;
+}
+
+footer .bottom-footer .social-media li:hover {
+  background-color: #d45749;
+  border: 2px solid #d45749;
+}
+
+footer .bottom-footer .social-media li a {
+  color: white;
+}
 /*# sourceMappingURL=main.css.map */
