@@ -452,6 +452,12 @@ footer .bottom-footer {
   }
 }
 
+@media only screen and (min-width: 768px) {
+  footer .bottom-footer .copyright {
+    width: 52%;
+  }
+}
+
 footer .bottom-footer .social-media {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -468,6 +474,12 @@ footer .bottom-footer .social-media {
 @media only screen and (min-width: 768px) {
   footer .bottom-footer .social-media {
     width: 40%;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  footer .bottom-footer .social-media {
+    width: 22%;
   }
 }
 

@@ -63,6 +63,12 @@ footer {
       }
     }
 
+    @include media-query($tablet-width) {
+      .copyright {
+        width: 52%;
+      }
+    }
+
     .social-media {
       display: flex;
       list-style: none;
@@ -73,6 +79,10 @@ footer {
 
       @include media-query($tablet-width) {
         width: 40%;
+      }
+
+      @include media-query($desktop-width) {
+        width: 22%;
       }
 
       li {
