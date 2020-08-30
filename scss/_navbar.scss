@@ -1,18 +1,30 @@
+@mixin flex-alignment($direction, $justify, $align) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+@mixin tablet-view {
+  @media only screen and (min-width: 769px) {
+    @content
+  }
+}
+
 nav {
   background-color: $tomato-orange;
   position: fixed;
   width: 100%;
   z-index: 2;
+  height: 3.5rem;
 
   .nav-wrapper {
     width: 95%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    @include flex-alignment(row, space-between, center);
     margin: 0 auto;
 
     .logo-container {
-      width: 15%;
+      width: 3rem;
 
       img {
         width: 100%;
@@ -25,9 +37,7 @@ nav {
 
     .search-icon-wrapper {
       width: 15%;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
+      @include flex-alignment(row, space-between, center);
       list-style: none;
       margin-top: 1rem;
 

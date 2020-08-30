@@ -10,6 +10,7 @@ nav {
   position: fixed;
   width: 100%;
   z-index: 2;
+  height: 3.5rem;
 }
 
 nav .nav-wrapper {
@@ -17,6 +18,10 @@ nav .nav-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -27,7 +32,7 @@ nav .nav-wrapper {
 }
 
 nav .nav-wrapper .logo-container {
-  width: 15%;
+  width: 3rem;
 }
 
 nav .nav-wrapper .logo-container img {
@@ -43,6 +48,10 @@ nav .nav-wrapper .search-icon-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -77,8 +86,6 @@ nav .nav-wrapper .search-icon-wrapper a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  position: relative;
-  top: 3rem;
   text-align: center;
 }
 
