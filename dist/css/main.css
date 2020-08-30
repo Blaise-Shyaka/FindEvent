@@ -175,6 +175,20 @@ nav .nav-wrapper .search-icon-wrapper a {
   top: 4rem;
 }
 
+@media only screen and (min-width: 768px) {
+  .homepage-events {
+    top: 2rem;
+  }
+  .homepage-events .events-near-me {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: 1fr 1fr;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template: 1fr 1fr/1fr 1fr;
+        grid-template-areas: "card1 card2" "card3 card4";
+  }
+}
+
 .homepage-events .event {
   width: 90%;
   margin: 2rem auto;

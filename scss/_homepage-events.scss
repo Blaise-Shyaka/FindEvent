@@ -1,6 +1,26 @@
+@mixin flex-alignment($direction, $justify, $align, $wrap) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+  flex-wrap: $wrap;
+}
+
 .homepage-events {
   position: relative;
   top: 4rem;
+
+  @include media-query($tablet-width){
+    top: 2rem;
+
+    .events-near-me {
+      display: grid;
+      grid-template: 1fr 1fr/1fr 1fr;
+      grid-template-areas: 
+      "card1 card2"
+      "card3 card4";
+    }
+  }
 
   .event {
     width: 90%;
