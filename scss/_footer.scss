@@ -1,20 +1,32 @@
 footer {
-  position: relative;
   margin-top: 4rem;
 
   .top-footer {
     background-color: $black;
     text-align: center;
-    padding: 3rem;
+    padding: 3rem 1rem;
     color: $white;
 
     .subscribe {
-      margin-bottom: 2rem;
+      margin: 2rem auto;
 
       input {
         background-color: $black;
         color: $white;
         border: 1px solid $white;
+        padding: 0.3rem 1.2rem;
+        outline: none;
+        width: 60%;
+        margin-top: 0.5rem;
+      }
+
+      button {
+        background-color: $tomato-orange;
+        padding: 0.3rem 0.6rem;
+        border-radius: 5px;
+        color: $white;
+        font-weight: bold;
+        outline: none;
       }
     }
 
@@ -27,6 +39,7 @@ footer {
     background-color: $footer-gray;
     color: $white;
     text-align: center;
+    border: 2px solid $footer-gray;
 
     .social-media {
       display: flex;

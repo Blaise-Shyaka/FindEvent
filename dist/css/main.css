@@ -63,7 +63,7 @@ nav .nav-wrapper .search-icon-wrapper a {
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4)), url("../images/glasses.jpg");
   background-size: cover;
   background-position: center center;
-  height: 80vh;
+  height: 35rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -86,6 +86,8 @@ nav .nav-wrapper .search-icon-wrapper a {
   background-color: #d45749;
   color: #fff;
   padding: 0.3rem 1.8rem;
+  border: none;
+  outline: none;
 }
 
 .hero .search-bar {
@@ -94,18 +96,28 @@ nav .nav-wrapper .search-icon-wrapper a {
 
 .hero .search-bar input {
   width: 65%;
-  padding: 0.15rem;
+  padding: 0.3rem 1rem;
+  outline: none;
 }
 
 .hero .search-bar button {
   background-color: #d45749;
   color: #fff;
-  padding: 0.2rem 0.6rem;
+  padding: 0.3rem 0.6rem;
+  border-radius: 5px;
+  font-weight: bold;
+  outline: none;
+  border: none;
 }
 
 .hero h4 {
   color: #fff;
   width: 95%;
+}
+
+.hero .near-you {
+  outline: none;
+  border: none;
 }
 
 .homepage-events {
@@ -180,25 +192,37 @@ nav .nav-wrapper .search-icon-wrapper a {
 }
 
 footer {
-  position: relative;
   margin-top: 4rem;
 }
 
 footer .top-footer {
   background-color: #000;
   text-align: center;
-  padding: 3rem;
+  padding: 3rem 1rem;
   color: #fff;
 }
 
 footer .top-footer .subscribe {
-  margin-bottom: 2rem;
+  margin: 2rem auto;
 }
 
 footer .top-footer .subscribe input {
   background-color: #000;
   color: #fff;
   border: 1px solid #fff;
+  padding: 0.3rem 1.2rem;
+  outline: none;
+  width: 60%;
+  margin-top: 0.5rem;
+}
+
+footer .top-footer .subscribe button {
+  background-color: #d45749;
+  padding: 0.3rem 0.6rem;
+  border-radius: 5px;
+  color: #fff;
+  font-weight: bold;
+  outline: none;
 }
 
 footer .top-footer .contact-us ul {
@@ -209,6 +233,7 @@ footer .bottom-footer {
   background-color: #1f1f1f;
   color: #fff;
   text-align: center;
+  border: 2px solid #1f1f1f;
 }
 
 footer .bottom-footer .social-media {
