@@ -68,6 +68,12 @@ nav .nav-wrapper .search-icon-wrapper {
   }
 }
 
+@media only screen and (min-width: 1024px) {
+  nav .nav-wrapper .search-icon-wrapper {
+    display: none;
+  }
+}
+
 nav .nav-wrapper .search-icon-wrapper a {
   text-decoration: none;
   color: #fff;
@@ -77,6 +83,47 @@ nav .nav-wrapper .search-icon-wrapper a {
   nav .nav-wrapper .search-icon-wrapper a {
     font-size: 1.3rem;
   }
+}
+
+@media only screen and (min-width: 1024px) {
+  nav .nav-wrapper .navbar-links {
+    display: block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 15%;
+    margin-top: 0.9rem;
+    list-style: none;
+  }
+  nav .nav-wrapper .navbar-links a {
+    color: #fff;
+    font-size: 1rem;
+    font-weight: bold;
+    border: 2px solid #fff;
+    padding: 0.2rem 1rem;
+  }
+  nav .nav-wrapper .navbar-links a:hover {
+    background-color: #fff;
+    color: #d45749;
+  }
+}
+
+body {
+  background-color: grey;
+}
+
+main {
+  background-color: #fff;
 }
 
 .hero {
@@ -121,6 +168,16 @@ nav .nav-wrapper .search-icon-wrapper a {
   }
 }
 
+@media only screen and (min-width: 1024px) {
+  .hero .search-bar {
+    width: 40%;
+    position: fixed;
+    top: -3.4rem;
+    left: 30%;
+    z-index: 3;
+  }
+}
+
 .hero .search-bar input {
   width: 65%;
   padding: 0.3rem 1rem;
@@ -140,6 +197,20 @@ nav .nav-wrapper .search-icon-wrapper a {
 @media only screen and (min-width: 768px) {
   .hero .search-bar button {
     width: 25%;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .hero .search-bar button {
+    width: 6rem;
+    background-color: #fff;
+    border: 2px solid #fff;
+    color: #d45749;
+    padding: 0.2rem 1rem;
+  }
+  .hero .search-bar button:hover {
+    background-color: #d45749;
+    color: #fff;
   }
 }
 
@@ -262,6 +333,28 @@ footer {
   margin-top: 4rem;
 }
 
+@media only screen and (min-width: 768px) {
+  footer {
+    margin-top: 2rem;
+  }
+  footer .top-footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
+}
+
 footer .top-footer {
   background-color: #000;
   text-align: center;
@@ -270,7 +363,13 @@ footer .top-footer {
 }
 
 footer .top-footer .subscribe {
-  margin: 2rem auto;
+  margin-bottom: 2rem;
+}
+
+@media only screen and (min-width: 768px) {
+  footer .top-footer .subscribe {
+    width: 40%;
+  }
 }
 
 footer .top-footer .subscribe input {
@@ -303,6 +402,27 @@ footer .bottom-footer {
   border: 2px solid #1f1f1f;
 }
 
+@media only screen and (min-width: 768px) {
+  footer .bottom-footer .copyright {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    list-style: none;
+    width: 80%;
+    margin: 2rem auto;
+  }
+}
+
 footer .bottom-footer .social-media {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -316,8 +436,14 @@ footer .bottom-footer .social-media {
   padding: 1rem;
 }
 
+@media only screen and (min-width: 768px) {
+  footer .bottom-footer .social-media {
+    width: 40%;
+  }
+}
+
 footer .bottom-footer .social-media li {
-  border: 3px solid #000;
+  border: 3px solid #444;
   width: 3rem;
   height: 3rem;
   display: -webkit-box;

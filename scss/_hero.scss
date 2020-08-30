@@ -1,3 +1,11 @@
+body {
+  background-color: grey;
+}
+
+main {
+  background-color: $white;
+}
+
 .hero {
   background-image:
     linear-gradient(
@@ -32,6 +40,14 @@
       font-size: 1.2rem;
     }
 
+    @include media-query($desktop-width){
+      width: 40%;
+      position: fixed;
+      top: -3.4rem;
+      left: 30%;
+      z-index: 3;
+    }
+
     input {
       width: 65%;
       padding: 0.3rem 1rem;
@@ -49,6 +65,19 @@
 
       @include media-query($tablet-width){
         width: 25%;
+      }
+
+      @include media-query($desktop-width){
+        width: 6rem;
+        background-color: $white;
+        border: 2px solid $white;
+        color: $tomato-orange;
+        padding: 0.2rem 1rem;
+
+        &:hover {
+          background-color: $tomato-orange;
+          color: $white;
+        }
       }
     }
   }

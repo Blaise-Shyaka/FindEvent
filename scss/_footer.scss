@@ -1,6 +1,15 @@
 footer {
   margin-top: 4rem;
 
+  @include media-query($tablet-width) {
+    margin-top: 2rem;
+
+    .top-footer {
+      @include flex-alignment(row, space-evenly, center);
+      text-align: center;
+    }
+  }
+
   .top-footer {
     background-color: $black;
     text-align: center;
@@ -8,7 +17,11 @@ footer {
     color: $white;
 
     .subscribe {
-      margin: 2rem auto;
+      margin-bottom: 2rem;
+
+      @include media-query($tablet-width) {
+        width: 40%;
+      }
 
       input {
         background-color: $black;
@@ -41,6 +54,15 @@ footer {
     text-align: center;
     border: 2px solid $footer-gray;
 
+    @include media-query($tablet-width) {
+      .copyright {
+        @include flex-alignment(row, space-evenly, center);
+        list-style: none;
+        width: 80%;
+        margin: 2rem auto;
+      }
+    }
+
     .social-media {
       display: flex;
       list-style: none;
@@ -49,8 +71,12 @@ footer {
       justify-content: space-between;
       padding: 1rem;
 
+      @include media-query($tablet-width) {
+        width: 40%;
+      }
+
       li {
-        border: 3px solid $black;
+        border: 3px solid $sm-border;
         width: 3rem;
         height: 3rem;
         display: flex;
