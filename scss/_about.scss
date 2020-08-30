@@ -6,6 +6,14 @@
   align-items: center;
   color: $white;
 
+  @include media-query($desktop-width){
+    @include flex-alignment(row, space-evenly, center);
+
+    #{&}-item {
+      width: 28%;
+    }
+  }
+
   &-item {
     width: 80%;
     text-align: center;
