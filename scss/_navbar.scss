@@ -5,8 +5,8 @@
   align-items: $align;
 }
 
-@mixin tablet-view {
-  @media only screen and (min-width: 769px) {
+@mixin media-query($width) {
+  @media only screen and (min-width: $width) {
     @content
   }
 }
@@ -41,9 +41,17 @@ nav {
       list-style: none;
       margin-top: 1rem;
 
+      @include media-query($tablet-width){
+        width: 8%;
+      } 
+
       a {
         text-decoration: none;
         color: $white;
+
+        @include media-query($tablet-width){
+          font-size: 1.3rem;
+        }
       }
     }
   }

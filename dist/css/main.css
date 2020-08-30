@@ -62,9 +62,21 @@ nav .nav-wrapper .search-icon-wrapper {
   margin-top: 1rem;
 }
 
+@media only screen and (min-width: 768px) {
+  nav .nav-wrapper .search-icon-wrapper {
+    width: 8%;
+  }
+}
+
 nav .nav-wrapper .search-icon-wrapper a {
   text-decoration: none;
   color: #fff;
+}
+
+@media only screen and (min-width: 768px) {
+  nav .nav-wrapper .search-icon-wrapper a {
+    font-size: 1.3rem;
+  }
 }
 
 .hero {
@@ -101,6 +113,14 @@ nav .nav-wrapper .search-icon-wrapper a {
   width: 95%;
 }
 
+@media only screen and (min-width: 768px) {
+  .hero .search-bar {
+    width: 60%;
+    margin-top: 4rem;
+    font-size: 1.2rem;
+  }
+}
+
 .hero .search-bar input {
   width: 65%;
   padding: 0.3rem 1rem;
@@ -110,21 +130,44 @@ nav .nav-wrapper .search-icon-wrapper a {
 .hero .search-bar button {
   background-color: #d45749;
   color: #fff;
-  padding: 0.3rem 0.6rem;
+  padding: 0.3rem 1rem;
   border-radius: 5px;
   font-weight: bold;
   outline: none;
   border: none;
 }
 
+@media only screen and (min-width: 768px) {
+  .hero .search-bar button {
+    width: 25%;
+  }
+}
+
 .hero h4 {
   color: #fff;
   width: 95%;
+  font-size: 1.8rem;
+}
+
+@media only screen and (min-width: 768px) {
+  .hero h4 {
+    font-size: 3rem;
+  }
 }
 
 .hero .near-you {
   outline: none;
   border: none;
+  font-weight: bold;
+}
+
+@media only screen and (min-width: 768px) {
+  .hero .near-you {
+    width: 50%;
+    font-size: 1.3rem;
+    padding: 0.5rem 2rem;
+    font-weight: bold;
+  }
 }
 
 .homepage-events {
