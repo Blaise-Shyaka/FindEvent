@@ -1,11 +1,3 @@
-@mixin flex-alignment($direction, $justify, $align, $wrap) {
-  display: flex;
-  flex-direction: $direction;
-  justify-content: $justify;
-  align-items: $align;
-  flex-wrap: $wrap;
-}
-
 .homepage-events {
   position: relative;
   top: 4rem;
@@ -19,6 +11,10 @@
       grid-template-areas: 
       "card1 card2"
       "card3 card4";
+    }
+
+    .about-item {
+      width: 50%;
     }
   }
 

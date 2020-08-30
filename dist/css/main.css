@@ -187,6 +187,9 @@ nav .nav-wrapper .search-icon-wrapper a {
         grid-template: 1fr 1fr/1fr 1fr;
         grid-template-areas: "card1 card2" "card3 card4";
   }
+  .homepage-events .about-item {
+    width: 50%;
+  }
 }
 
 .homepage-events .event {
