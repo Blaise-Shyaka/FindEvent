@@ -90,6 +90,12 @@ main {
     @include media-query($tablet-width){
       font-size: 3rem;
     }
+
+    @include media-query($desktop-width){
+      font-size: 3rem;
+      width: 60%;
+      margin-top: 3.8rem;
+    }
   }
 
   .near-you {
