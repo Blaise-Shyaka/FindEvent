@@ -1,3 +1,40 @@
+@mixin media-query($width) {
+  @media only screen and (min-width: $width) {
+    @content;
+  }
+}
+
+.search-results {
+  h3 {
+    font-size: 1.5rem;
+    margin: 1.5rem;
+    color: $tomato-orange;
+    text-decoration: underline;
+    font-weight: bold;
+  }
+
+  .search-results-cards {
+    @include media-query($tablet-width) {
+      display: grid;
+      grid-template: repeat(3, 1fr) / repeat(2, 1fr);
+      grid-template-areas:
+        'card1 card2'
+        'card3 card4'
+        'card5 card6';
+      grid-gap: 1rem;
+    }
+
+    @include media-query($desktop-width) {
+      display: grid;
+      grid-template: repeat(2, 1fr) / repeat(3, 1fr);
+      grid-template-areas:
+        'card1 card2 card3'
+        'card4 card5 card6';
+      grid-gap: 1rem;
+    }
+  }
+}
+
 .result-event {
-    margin-bottom: 1rem;
+  margin-bottom: 1rem;
 }

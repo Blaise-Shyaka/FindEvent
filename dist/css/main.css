@@ -520,6 +520,38 @@ footer .bottom-footer .social-media li a {
   background-color: yellow;
 }
 
+.search-results h3 {
+  font-size: 1.5rem;
+  margin: 1.5rem;
+  color: #d45749;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+@media only screen and (min-width: 768px) {
+  .search-results .search-results-cards {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: (1fr)[3];
+    -ms-grid-columns: (1fr)[2];
+        grid-template: repeat(3, 1fr)/repeat(2, 1fr);
+        grid-template-areas: 'card1 card2' 'card3 card4' 'card5 card6';
+    grid-gap: 1rem;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .search-results .search-results-cards {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: (1fr)[2];
+    -ms-grid-columns: (1fr)[3];
+        grid-template: repeat(2, 1fr)/repeat(3, 1fr);
+        grid-template-areas: 'card1 card2 card3' 'card4 card5 card6';
+    grid-gap: 1rem;
+  }
+}
+
 .result-event {
   margin-bottom: 1rem;
 }
@@ -533,5 +565,6 @@ footer .bottom-footer .social-media li a {
   margin: 1.5rem;
   color: #d45749;
   text-decoration: underline;
+  font-weight: bold;
 }
 /*# sourceMappingURL=main.css.map */
