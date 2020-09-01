@@ -599,4 +599,85 @@ footer .bottom-footer .social-media li a {
   text-decoration: underline;
   font-weight: bold;
 }
+
+.hero-section {
+  position: relative;
+  top: 3.5rem;
+  height: 20rem;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("../images/stanley.jpg");
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/stanley.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  color: #fff;
+  padding: 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+@media only screen and (min-width: 768px) {
+  .hero-section h1 {
+    font-size: 3.5rem;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .hero-section p {
+    font-size: 1.5rem;
+  }
+}
+
+.hero-section .get-in {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+.hero-section .get-in p {
+  margin-bottom: 0;
+  font-style: italic;
+  font-size: 1.2rem;
+  color: #d45749;
+  font-weight: bold;
+}
+
+@media only screen and (min-width: 768px) {
+  .hero-section .get-in p {
+    font-size: 1.5rem;
+  }
+}
+
+.hero-section .get-in a {
+  border: 2px solid #444;
+  background-color: #fff;
+  font-weight: bold;
+}
+
+@media only screen and (min-width: 768px) {
+  .hero-section .get-in a {
+    font-size: 1.1rem;
+  }
+}
 /*# sourceMappingURL=main.css.map */
