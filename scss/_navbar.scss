@@ -20,7 +20,9 @@ nav {
 
   .nav-wrapper {
     width: 95%;
+
     @include flex-alignment(row, space-between, center);
+
     margin: 0 auto;
 
     .logo-container {
@@ -37,7 +39,9 @@ nav {
 
     .search-icon-wrapper {
       width: 15%;
+
       @include flex-alignment(row, space-between, center);
+
       list-style: none;
       margin-top: 1rem;
 
@@ -62,6 +66,7 @@ nav {
     @include media-query($desktop-width) {
       .navbar-links {
         display: block;
+
         @include flex-alignment(row, space-between, center);
         // border: 1px solid yellow;
         width: 11rem;

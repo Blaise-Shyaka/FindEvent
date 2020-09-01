@@ -2,15 +2,15 @@
   position: relative;
   top: 4rem;
 
-  @include media-query($tablet-width){
+  @include media-query($tablet-width) {
     top: 2rem;
 
     .events-near-me {
       display: grid;
       grid-template: 1fr 1fr/1fr 1fr;
-      grid-template-areas: 
-      "card1 card2"
-      "card3 card4";
+      grid-template-areas:
+        "card1 card2"
+        "card3 card4";
     }
 
     .about-item {

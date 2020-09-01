@@ -34,13 +34,13 @@ main {
   .search-bar {
     width: 95%;
 
-    @include media-query($tablet-width){
+    @include media-query($tablet-width) {
       width: 60%;
       margin-top: 4rem;
       font-size: 1.2rem;
     }
 
-    @include media-query($desktop-width){
+    @include media-query($desktop-width) {
       width: 40%;
       position: fixed;
       top: -3.4rem;
@@ -63,11 +63,11 @@ main {
       outline: none;
       border: none;
 
-      @include media-query($tablet-width){
+      @include media-query($tablet-width) {
         width: 25%;
       }
 
-      @include media-query($desktop-width){
+      @include media-query($desktop-width) {
         width: 6rem;
         background-color: $white;
         border: 2px solid $white;
@@ -87,11 +87,11 @@ main {
     width: 95%;
     font-size: 1.8rem;
 
-    @include media-query($tablet-width){
+    @include media-query($tablet-width) {
       font-size: 3rem;
     }
 
-    @include media-query($desktop-width){
+    @include media-query($desktop-width) {
       font-size: 3rem;
       width: 60%;
       margin-top: 3.8rem;
@@ -103,7 +103,7 @@ main {
     border: none;
     font-weight: bold;
 
-    @include media-query($tablet-width){
+    @include media-query($tablet-width) {
       width: 50%;
       font-size: 1.3rem;
       padding: 0.5rem 2rem;

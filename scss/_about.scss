@@ -6,7 +6,7 @@
   align-items: center;
   color: $white;
 
-  @include media-query($desktop-width){
+  @include media-query($desktop-width) {
     @include flex-alignment(row, space-evenly, center);
 
     #{&}-item {
