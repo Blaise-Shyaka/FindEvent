@@ -682,12 +682,12 @@ footer .bottom-footer .social-media li a {
   }
 }
 
-.event-details {
+.individual-event-details {
   margin-top: 5rem;
 }
 
 @media only screen and (min-width: 768px) {
-  .event-details {
+  .individual-event-details {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -705,24 +705,24 @@ footer .bottom-footer .social-media li a {
 }
 
 @media only screen and (min-width: 768px) {
-  .event-details .about-event {
+  .individual-event-details .about-event {
     width: 50%;
   }
 }
 
-.event-details .about-event h2 {
+.individual-event-details .about-event h2 {
   font-size: 1.5rem;
   color: #d45749;
   text-decoration: underline;
 }
 
 @media only screen and (min-width: 768px) {
-  .event-details .other-details {
+  .individual-event-details .other-details {
     width: 40%;
   }
 }
 
-.event-details .other-details .title {
+.individual-event-details .other-details .title {
   font-size: 1rem;
   color: #d45749;
   text-decoration: underline;
