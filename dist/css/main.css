@@ -510,7 +510,8 @@ footer .bottom-footer .social-media li a {
 
 .filters {
   position: relative;
-  top: 5rem;
+  top: 4rem;
+  margin-bottom: 4rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -521,11 +522,26 @@ footer .bottom-footer .social-media li a {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-bottom: 8rem;
-  height: 5rem;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+@media only screen and (max-width: 595px) {
+  .filters {
+    overflow: scroll;
+    width: 100%;
+    height: 10rem;
+    padding-left: 18rem;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .filters {
+    height: 5rem;
+    overflow: visible;
+    padding-left: 1rem;
+  }
 }
 
 .filters .date-dropdown {
@@ -533,6 +549,7 @@ footer .bottom-footer .social-media li a {
   border: 2px solid #444;
   outline: none;
   font-weight: bold;
+  margin: 0.5rem;
 }
 
 .search-results h3 {

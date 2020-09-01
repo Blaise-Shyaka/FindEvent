@@ -1,21 +1,67 @@
 @mixin flex-alignment($direction, $justify, $align) {
-    display: flex;
-    flex-direction: $direction;
-    justify-content: $justify;
-    align-items: $align;
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+@mixin media-query($width) {
+    @media only screen and (min-width: $width) {
+      @content;
+    }
   }
 
-.filters {
-    position: relative;
-    top: 5rem;
-    @include flex-alignment(row, space-evenly, center);
-    margin-bottom: 8rem;
-    height: 5rem;
-
-    .date-dropdown {
-        background-color: $gray;
-        border: 2px solid $sm-border;
-        outline: none;
-        font-weight: bold;
+  @mixin max-media-query($width) {
+    @media only screen and (max-width: $width) {
+      @content;
     }
+  }
+  
+
+.filters {
+  position: relative;
+  top: 4rem;
+  margin-bottom: 4rem;
+  @include flex-alignment(row, space-evenly, flex-start);
+
+  @include max-media-query(595px){
+    overflow: scroll;
+  width: 100%;
+  height: 10rem;
+  padding-left: 18rem;
 }
+
+  @include media-query($tablet-width){
+      height: 5rem;
+      overflow: visible;
+      padding-left: 1rem;
+  }
+
+  .date-dropdown {
+    background-color: $gray;
+    border: 2px solid $sm-border;
+    outline: none;
+    font-weight: bold;
+    margin: 0.5rem;
+  }
+}
+
+// .filters {
+
+//     width: 80%;
+
+//     .dropdown-wrapper {
+//     position: relative;
+//     top: 5rem;
+//     @include flex-alignment(row, space-evenly, center);
+//     margin-bottom: 8rem;
+//     height: 5rem;
+//     width: 10rem;
+
+//     .date-dropdown {
+//         background-color: $gray;
+//         border: 2px solid $sm-border;
+//         outline: none;
+//         font-weight: bold;
+//     }
+// }
