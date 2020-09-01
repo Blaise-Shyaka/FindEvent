@@ -511,13 +511,28 @@ footer .bottom-footer .social-media li a {
 .filters {
   position: relative;
   top: 5rem;
-  border: 1px solid red;
-  margin-bottom: 15rem;
-  height: 15rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 8rem;
+  height: 5rem;
 }
 
 .filters .date-dropdown {
-  background-color: yellow;
+  background-color: #eee;
+  border: 2px solid #444;
+  outline: none;
+  font-weight: bold;
 }
 
 .search-results h3 {

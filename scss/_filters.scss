@@ -1,11 +1,21 @@
+@mixin flex-alignment($direction, $justify, $align) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+  }
+
 .filters {
     position: relative;
     top: 5rem;
-    border: 1px solid red;
-    margin-bottom: 15rem;
-    height: 15rem;
+    @include flex-alignment(row, space-evenly, center);
+    margin-bottom: 8rem;
+    height: 5rem;
 
     .date-dropdown {
-        background-color: yellow;
+        background-color: $gray;
+        border: 2px solid $sm-border;
+        outline: none;
+        font-weight: bold;
     }
 }
