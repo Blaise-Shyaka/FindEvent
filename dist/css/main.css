@@ -603,6 +603,7 @@ footer .bottom-footer .social-media li a {
 .hero-section {
   position: relative;
   top: 3.5rem;
+  margin-bottom: 3.5rem;
   height: 20rem;
   background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("../images/stanley.jpg");
   background-image: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/stanley.jpg");
