@@ -214,20 +214,20 @@ main {
   }
 }
 
-.hero h4 {
+.hero h1 {
   color: #fff;
   width: 95%;
   font-size: 1.8rem;
 }
 
 @media only screen and (min-width: 768px) {
-  .hero h4 {
+  .hero h1 {
     font-size: 3rem;
   }
 }
 
 @media only screen and (min-width: 1024px) {
-  .hero h4 {
+  .hero h1 {
     font-size: 3rem;
     width: 60%;
     margin-top: 3.8rem;
