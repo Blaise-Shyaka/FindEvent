@@ -8,7 +8,6 @@
   margin-bottom: 5rem;
 
   @include media-query($desktop-width) {
-
     margin-bottom: 4rem;
 
     @include flex-alignment(row, space-evenly, center);
