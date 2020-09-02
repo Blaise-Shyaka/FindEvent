@@ -1,0 +1,73 @@
+@mixin flex-alignment($direction, $justify, $align) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+@mixin media-query($width) {
+  @media only screen and (min-width: $width) {
+    @content;
+  }
+}
+
+.hero-section {
+  position: relative;
+  top: 3.5rem;
+  margin-bottom: 3.5rem;
+  height: 20rem;
+  background-image:
+    linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url('../images/stanley.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  color: $white;
+  padding: 1.5rem;
+
+  @include flex-alignment(column, space-evenly, flex-start);
+
+  h1 {
+    @include media-query($tablet-width) {
+      font-size: 3.5rem;
+    }
+  }
+
+  p {
+    @include media-query($tablet-width) {
+      font-size: 1.5rem;
+    }
+  }
+
+  .get-in {
+    @include flex-alignment(row, space-between, center);
+
+    width: 100%;
+
+    p {
+      margin-bottom: 0;
+      font-style: italic;
+      font-size: 1.2rem;
+      color: $tomato-orange;
+      font-weight: bold;
+
+      @include media-query($tablet-width) {
+        font-size: 1.5rem;
+      }
+    }
+
+    a {
+      border: 2px solid $sm-border;
+      background-color: $white;
+      font-weight: bold;
+
+      @include media-query($tablet-width) {
+        font-size: 1.1rem;
+      }
+    }
+  }
+}

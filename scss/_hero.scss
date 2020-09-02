@@ -1,0 +1,113 @@
+body {
+  background-color: grey;
+}
+
+main {
+  background-color: $white;
+}
+
+.hero {
+  background-image:
+    linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.8),
+      rgba(0, 0, 0, 0.4)
+    ),
+    url('../images/glasses.jpg');
+  background-size: cover;
+  background-position: center center;
+  height: 35rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+
+  button {
+    background-color: $tomato-orange;
+    color: $white;
+    padding: 0.3rem 1.8rem;
+    border: none;
+    outline: none;
+  }
+
+  .search-bar {
+    width: 95%;
+
+    @include media-query($tablet-width) {
+      width: 60%;
+      margin-top: 4rem;
+      font-size: 1.2rem;
+    }
+
+    @include media-query($desktop-width) {
+      width: 40%;
+      position: fixed;
+      top: -3.4rem;
+      left: 30%;
+      z-index: 3;
+    }
+
+    input {
+      width: 65%;
+      padding: 0.3rem 1rem;
+      outline: none;
+    }
+
+    button {
+      background-color: $tomato-orange;
+      color: $white;
+      padding: 0.3rem 1rem;
+      border-radius: 5px;
+      font-weight: bold;
+      outline: none;
+      border: none;
+
+      @include media-query($tablet-width) {
+        width: 25%;
+      }
+
+      @include media-query($desktop-width) {
+        width: 6rem;
+        background-color: $white;
+        border: 2px solid $white;
+        color: $tomato-orange;
+        padding: 0.2rem 1rem;
+
+        &:hover {
+          background-color: $tomato-orange;
+          color: $white;
+        }
+      }
+    }
+  }
+
+  h1 {
+    color: $white;
+    width: 95%;
+    font-size: 1.8rem;
+
+    @include media-query($tablet-width) {
+      font-size: 3rem;
+    }
+
+    @include media-query($desktop-width) {
+      font-size: 3rem;
+      width: 60%;
+      margin-top: 3.8rem;
+    }
+  }
+
+  .near-you {
+    outline: none;
+    border: none;
+    font-weight: bold;
+
+    @include media-query($tablet-width) {
+      width: 50%;
+      font-size: 1.3rem;
+      padding: 0.5rem 2rem;
+      font-weight: bold;
+    }
+  }
+}

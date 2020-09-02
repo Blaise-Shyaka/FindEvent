@@ -1,0 +1,39 @@
+.about {
+  background-color: $gray;
+  padding: 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: $dark-color;
+  margin-bottom: 5rem;
+
+  @include media-query($desktop-width) {
+    margin-bottom: 4rem;
+
+    @include flex-alignment(row, space-evenly, center);
+
+    #{&}-item {
+      width: 28%;
+    }
+  }
+
+  &-item {
+    width: 80%;
+    text-align: center;
+    margin-bottom: 2rem;
+
+    .icon-wrapper {
+      font-size: 3rem;
+      color: $dark-color;
+    }
+
+    .about-text {
+      font-size: 1.2rem;
+
+      .about-title {
+        font-size: 2rem;
+        font-weight: bold;
+      }
+    }
+  }
+}

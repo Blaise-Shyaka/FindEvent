@@ -1,0 +1,110 @@
+footer {
+  margin-top: 4rem;
+
+  @include media-query($tablet-width) {
+    margin-top: 2rem;
+
+    .top-footer {
+      @include flex-alignment(row, space-evenly, center);
+
+      text-align: center;
+    }
+  }
+
+  .top-footer {
+    background-color: $black;
+    text-align: center;
+    padding: 3rem 1rem;
+    color: $white;
+
+    .subscribe {
+      margin-bottom: 2rem;
+
+      @include media-query($tablet-width) {
+        width: 40%;
+      }
+
+      input {
+        background-color: $black;
+        color: $white;
+        border: 1px solid $white;
+        padding: 0.3rem 1.2rem;
+        outline: none;
+        width: 60%;
+        margin-top: 0.5rem;
+      }
+
+      button {
+        background-color: $tomato-orange;
+        padding: 0.3rem 0.6rem;
+        border-radius: 5px;
+        color: $white;
+        font-weight: bold;
+        outline: none;
+      }
+    }
+
+    .contact-us ul {
+      list-style: none;
+    }
+  }
+
+  .bottom-footer {
+    background-color: $footer-gray;
+    color: $white;
+    text-align: center;
+    border: 2px solid $footer-gray;
+
+    @include media-query($tablet-width) {
+      .copyright {
+        @include flex-alignment(row, space-evenly, center);
+
+        list-style: none;
+        width: 80%;
+        margin: 2rem auto;
+      }
+    }
+
+    @include media-query($tablet-width) {
+      .copyright {
+        width: 52%;
+      }
+    }
+
+    .social-media {
+      display: flex;
+      list-style: none;
+      width: 70%;
+      margin: 0 auto;
+      justify-content: space-between;
+      padding: 1rem;
+
+      @include media-query($tablet-width) {
+        width: 40%;
+      }
+
+      @include media-query($desktop-width) {
+        width: 22%;
+      }
+
+      li {
+        border: 3px solid $sm-border;
+        width: 3rem;
+        height: 3rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+
+        &:hover {
+          background-color: $tomato-orange;
+          border: 2px solid $tomato-orange;
+        }
+
+        a {
+          color: white;
+        }
+      }
+    }
+  }
+}
