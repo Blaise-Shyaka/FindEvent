@@ -531,10 +531,11 @@ footer .bottom-footer .social-media li a {
 
 @media only screen and (max-width: 595px) {
   .filters {
-    overflow: scroll;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     width: 100%;
     height: 10rem;
-    padding-left: 18rem;
+    min-width: 250px;
   }
 }
 
