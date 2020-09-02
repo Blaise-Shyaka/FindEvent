@@ -1,29 +1,26 @@
 @mixin media-query($width) {
-    @media only screen and (min-width: $width) {
-      @content;
-    }
+  @media only screen and (min-width: $width) {
+    @content;
   }
+}
 
-  @mixin flex-alignment($direction, $justify, $align) {
-    display: flex;
-    flex-direction: $direction;
-    justify-content: $justify;
-    align-items: $align;
-  }
-  
+@mixin flex-alignment($direction, $justify, $align) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+}
 
 .individual-event-details {
+  margin-top: 5rem;
 
-    margin-top: 5rem;
-
-    @include media-query($tablet-width){
-        @include flex-alignment(row, space-evenly , flex-start);
-    }
+  @include media-query($tablet-width) {
+    @include flex-alignment(row, space-evenly , flex-start);
+  }
 
   .about-event {
-
-    @include media-query($tablet-width){
-        width: 50%;
+    @include media-query($tablet-width) {
+      width: 50%;
     }
 
     h2 {
@@ -31,21 +28,18 @@
       color: $tomato-orange;
       text-decoration: underline;
     }
-
-    
   }
 
   .other-details {
-
-    @include media-query($tablet-width){
-        width: 40%;
+    @include media-query($tablet-width) {
+      width: 40%;
     }
 
-      .title {
-        font-size: 1rem;
-        color: $tomato-orange;
-        text-decoration: underline;
-        font-weight: bold;
-      }
+    .title {
+      font-size: 1rem;
+      color: $tomato-orange;
+      text-decoration: underline;
+      font-weight: bold;
+    }
   }
 }
