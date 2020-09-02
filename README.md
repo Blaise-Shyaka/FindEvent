@@ -18,7 +18,7 @@ FindEvent helps users to search events globally as well as events near them. It 
 
 ## Setup
 
-- Git clone https://github.com/Blaise-Shyaka/FindEvent.git
+- Git clone [this repository](https://github.com/Blaise-Shyaka/FindEvent.git)
 - `cd dist`
 - Open `index.html` with your default browser.
 
@@ -39,3 +39,7 @@ Feel free to check the [issues page](issues/).
 ## Show your support
 
 Give a ⭐️ if you like this project!
+
+## Acknowledgments
+
+- Hat tip to PatashuleKE for this [design inspiration](https://www.behance.net/gallery/25563385/PatashuleKE)
